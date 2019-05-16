@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const serverless = require('serverless-http');
+const bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/index');
 var resumesRouter = require('./routes/resume');
@@ -39,4 +41,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
+app.use(bodyParser.json());
+app.use('/.netlify/functions/server', router);
+
 module.exports = app;
+module.exports.handler = serverless(app);

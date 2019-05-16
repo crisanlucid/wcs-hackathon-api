@@ -1,9 +1,22 @@
 {
-  "name": "demoapi",
+  "name": "netlify-express-rest",
   "version": "0.0.0",
   "private": true,
+  "description": "Example of how to deploy a Express.js Netlify app.",
+  "main": "functions/server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crisanlucid/wcs-hackathon-api.git"
+  },
+  "homepage": "https://github.com/crisanlucid/wcs-hackathon-api#readme",
+  "keywords": [
+    "netlify",
+    "express.js",
+    "rest"
+  ],
   "scripts": {
-    "start": "node ./bin/www",
+    "build": "netlify-lambda build express",
+    "start": "node server-local.js",
     "test": "mocha"
   },
   "dependencies": {
@@ -11,14 +24,17 @@
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.4",
     "debug": "~2.6.9",
-    "express": "~4.16.0",
     "http-errors": "~1.6.2",
-    "morgan": "~1.9.0",
+    "morgan": "^1.9.1",
     "mysql": "^2.15.0",
-    "pug": "2.0.0-beta11",
-    "supertest": "^3.1.0"
+    "pug": "^2.0.3",
+    "supertest": "^3.1.0",
+    "express": "^4.16.3"
   },
   "devDependencies": {
+    "body-parser": "^1.18.3",
+    "netlify-lambda": "^0.4.0",
+    "serverless-http": "^1.6.0",
     "chai-http": "^4.0.0",
     "mocha": "^5.2.0",
     "request": "^2.87.0"

@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var listResumes = require('../config/resumes_list.json')
 
 // middleware specific to this router
 router.use(function timeLog(req, res, next) {
@@ -8,7 +9,7 @@ router.use(function timeLog(req, res, next) {
 });
 // define the home page route
 router.get('/', function(req, res) {
-  res.json([{username: 'Flavio'}]);
+  res.json(listResumes);
 });
 
 

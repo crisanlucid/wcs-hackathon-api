@@ -1,0 +1,50 @@
+[{
+        "basics": {
+            "name": "John Doe",
+            "picture": "",
+            "email": "john@gmail.com",
+            "website": "http://johndoe.com",
+            "summary": "A summary of John Doe...",
+            "location": {
+                "country": "Germany"
+            },
+            "profiles": [
+                {
+                    "network": "Github",
+                    "username": "john",
+                    "url": "https://github.com/john"
+                },
+                {
+                    "network": "Linkedin",
+                    "username": "john",
+                    "url": "https://linkedin.com/john"
+                }
+            ]
+        },
+        "projects": [
+            {
+                "title": "Project",
+                "date": "2014-11-01",
+                "summary": "There is no spoon.",
+                "technologies": [
+                    "css",
+                    "html",
+                    "react",
+                    "bootstrap"
+                ]
+            }
+        ],
+        "favorite_programming_languages": [
+            "HTML5",
+            "CSS3"
+        ],
+        "interests": [
+            {
+                "name": "Linux",
+                "keywords": [
+                    "git",
+                    "terminal"
+                ]
+            }
+        ]
+    }]

@@ -446,11 +446,10 @@
   },
   {
     "basics": {
-      "name": Bernadetta Nycz",
-    "picture": "",
-      "email": beta.nycz@icloud.com",
-   
-    "summary": "",
+      "name": "Bernadetta Nycz",
+      "picture": "https://i.ibb.co/MNvLhj9/IMG-0359.png",
+      "email": "beta.nycz @icloud.com",
+      "summary": "",
       "location": {
         "country": "Germany"
       },
